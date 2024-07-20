@@ -43,7 +43,8 @@ sudo apt-get update
 sudo apt-get install jenkins) ( copy for offical web site )
 - for tomcat(wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz) (copy from offical wed site)
 - for sonarqube(command=apt install docker.io -y | docker run --name myc1 -d -p 9000:9000 sonarqube:latest)
-- ##TOMCAT##
+- ##TOMCAT
 - first untar the tomcat file using command=(tar -xvdf file_name)
+- change directory to tomcat (cd tomcat) and in cd 
 - 
 
