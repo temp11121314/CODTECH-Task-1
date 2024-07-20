@@ -21,3 +21,4 @@ select the OS of the instance:Ubuntu,
 select instance type: t2.large,
 create Keys pair,vpc,subnet,security group,launch instance
                      -
+![Screenshot (3)](https://github.com/user-attachments/assets/d6713dd1-ff1f-4d5b-bd27-4145f6d336ec)
