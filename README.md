@@ -11,7 +11,7 @@
 - Automata Build process 
 - Automate Testing
 - Automate Deploying
-- **Process**
+- ### Process
 - step:1
 -Login to AWS console
 -Headover to EC2 resource dashboard
