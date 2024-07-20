@@ -7,3 +7,5 @@
 - Mentor:SANTHOSH
 - # overview of the project
 - ## Project: Create a Jenkins continuous integration/continuous deployment(CI/CD) pipeline to build, test, and deploy a application
+- Keys Activities
+- 
