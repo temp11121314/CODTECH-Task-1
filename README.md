@@ -1,5 +1,5 @@
 # CODTECH-Task-1
-<Name:Chatla Tharun>
+Name:Chatla Tharun
 Company:CODTECH IT SOLUTIONS
 ID:CT12DS1611
 Domain:DevOps
