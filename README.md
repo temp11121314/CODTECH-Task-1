@@ -13,11 +13,11 @@
 - Automate Deploying
 - **Process**
 - step:1
-      -Login to AWS console
-      -Headover to EC2 resource dashboard
-      -Launch instance
-                     -name:Jenkins
-                     -select the OS of the instance:Ubuntu
-                     -select instance type: t2.large
-                     -create Keys pair
+-Login to AWS console
+- Headover to EC2 resource dashboard
+- Launch instance
+- name:Jenkins
+- select the OS of the instance:Ubuntu
+- select instance type: t2.large
+- create Keys pair
                      -
