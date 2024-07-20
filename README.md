@@ -13,12 +13,9 @@
 - Automate Deploying
 - **Process**
 - step:1
-Login to AWS console
-Headover to EC2 resource dashboard
-Launch instance by selecting 
-name:Jenkins,
-select the OS of the instance:Ubuntu,
-select instance type: t2.large,
-create Keys pair,vpc,subnet,security group,launch instance
-                     -
-![Screenshot (3)](https://github.com/user-attachments/assets/d6713dd1-ff1f-4d5b-bd27-4145f6d336ec)
+-Login to AWS console
+-Headover to EC2 resource dashboard
+-Launch instance  
+![Screenshot 2024-07-20 223248](https://github.com/user-attachments/assets/a1ca9f75-d4da-4393-8b32-f30467ea804a)
+                     
+
