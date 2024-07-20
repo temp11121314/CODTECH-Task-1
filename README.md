@@ -27,8 +27,19 @@
 - by allowing port no:8080(Default jenkins port number),default port number of tomcat is 8080, To avoid conflicts with Jenkins, we are changing the port number of tomcat to 80 and SonarQube port no:9000
 - ![Screenshot 2024-07-20 225211](https://github.com/user-attachments/assets/0a785598-17e2-4614-9b97-8a265c6c521d)
 - launch the instance
-![Screenshot 2024-07-20 230536](https://github.com/user-attachments/assets/25342cba-c9ce-4682-b92c-167aa3c3829f)
-![Screenshot 2024-07-20 230536](https://github.com/user-attachments/assets/1acc7c37-4f3d-4867-af0f-c3ef1b77796b)
 - #### step:2(after launching the instance)
 - connect the instance to gitbash using shh client
-- 
+- ![Screenshot 2024-07-20 230536](https://github.com/user-attachments/assets/1acc7c37-4f3d-4867-af0f-c3ef1b77796b)
+- -make it as root user(command=sudo -i or sudo su) , update using (command=apt update -y)
+- Install java,maven,jenkins,sonarqube,tomcat
+- for java(command=apt install default-jdk -y)
+- for maven(command=apt install maven -y)
+- for jenkins(command=wget sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins) ( copy for offical web site )
+- for tomcat(wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz) (copy from offical wed site)
+
