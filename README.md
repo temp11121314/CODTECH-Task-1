@@ -76,11 +76,13 @@ sudo apt-get install jenkins) ( copy for offical web site )
 - create new item to build ,test ,deploy application and
 - enter item name:pipeline and select the pipeline ![Screenshot 2024-07-21 111753](https://github.com/user-attachments/assets/c861f244-6798-4f36-b4b1-f4e19eb2a630)
 - then write the pipeline script here ![Screenshot 2024-07-21 112021](https://github.com/user-attachments/assets/b7a20855-ba40-46c6-8454-f58ce5f32419)
-- 
-- 
-
-
-- 
+- first stage is git clone use the pipeline syntax to generate script![Screenshot 2024-07-21 143855](https://github.com/user-attachments/assets/20c34bc1-bf25-469a-9801-adcb0e013b19)
+- next stages maven validate and maven compile
+- in test stage give the copy line of sonarqube command
+- in maven package it convert to var file
+- then this var file is deployed to tomcat snd pipeline script for deploy ![Screenshot 2024-07-21 142505](https://github.com/user-attachments/assets/e0ae4d7b-d11c-4c5b-9bb2-be1349bb8034)
+- The overall script of pipeline ![Screenshot 2024-07-21 144417](https://github.com/user-attachments/assets/490d7139-3ab7-46cd-bc06-1eff8a8e395c)
+ 
 
 
 
