@@ -11,6 +11,10 @@
 - Automata Build process 
 - Automate Testing
 - Automate Deploying
+- Build tools:Maven
+- Testing:SonarQube
+- CI/CD tool:Jenkins
+- Server:Tomcat
 - ### Process
 - #### step:1
 -Login to AWS console
