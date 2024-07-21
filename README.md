@@ -51,7 +51,19 @@ sudo apt-get install jenkins) ( copy for offical web site )
 - Change port number of tomcat by opening server.xml file(vi srever.xml) change prot no:80
 - ![Screenshot 2024-07-21 102624](https://github.com/user-attachments/assets/a255271e-b573-4c98-9db0-07dca7df1792)
 - make the value to comment in context.xml files in (cd webapps/manager/META-INF/) (cd /webapps/host-manager/META-INF)
--![Screenshot 2024-07-21 103159](https://github.com/user-attachments/assets/59499307-3b6a-4294-8281-ad8ebee94af0)
-- then restart the tomcat by cd (/tomcat/bin) and ./shutdown.sh) (./startup.sh) then you can view sever by copy public ip of instance (52.66.25.109:80)
+-![Screenshot 2024-07-21![Screenshot 2024-07-21 105242](https://github.com/user-attachments/assets/83fb6461-ad56-4732-ba91-3898db1e9ce3)
+ 103159](https://github.com/user-attachments/assets/59499307-3b6a-4294-8281-ad8ebee94af0)
+- then restart the tomcat by (cd /tomcat/bin) and ./shutdown.sh) (./startup.sh) then you can view sever by copy public ip of instance (52.66.25.109:80)
   ![Screenshot 2024-07-21 104031](https://github.com/user-attachments/assets/7aaa42ed-f293-44c9-b23c-0f8362643634)
+- to open jenkins server 52.66.25.109:8080 for password cat /var/lib/jenkins/secrets/initialAdminPassword will get the password and install suggested plugins
+- ![Screenshot 2024-07-21 102432](https://github.com/user-attachments/assets/a8a9ac55-8fa9-4e2b-b09b-1b4cef0d9bc6)
+- And create Admin by giving you own data then jenkins server is started
+- ![Screenshot 2024-07-21 104649](https://github.com/user-attachments/assets/5fa7a8ab-5585-4d6d-bfa9-77476193c637)
+- TO setup sonarqube
+- public ip (52.66.25.109:9000) 9000 is the port number of sonarqube and default credentials for sonarqube is login and password is admin
+- ![Screenshot 2024-07-21 105118](https://github.com/user-attachments/assets/97fd4436-d6ec-41cc-bcaf-0ac9eeb5deaf)
+- make you own password 
+
+
+
 
