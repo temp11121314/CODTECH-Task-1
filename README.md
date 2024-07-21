@@ -48,7 +48,10 @@ sudo apt-get install jenkins) ( copy for offical web site )
 - change directory to tomcat and go to conf directory command=(cd /tomcat/conf/)
 - vi tomcat-users.xml (here we need to add user to manage-gui and script)
 - ![Screenshot 2024-07-21 101642](https://github.com/user-attachments/assets/1303395a-c849-4c0f-9495-6448eedb3192)
-- 
-)
-- 
+- Change port number of tomcat by opening server.xml file(vi srever.xml) change prot no:80
+- ![Screenshot 2024-07-21 102624](https://github.com/user-attachments/assets/a255271e-b573-4c98-9db0-07dca7df1792)
+- make the value to comment in context.xml files in (cd webapps/manager/META-INF/) (cd /webapps/host-manager/META-INF)
+-![Screenshot 2024-07-21 103159](https://github.com/user-attachments/assets/59499307-3b6a-4294-8281-ad8ebee94af0)
+- then restart the tomcat by cd (/tomcat/bin) and ./shutdown.sh) (./startup.sh) then you can view sever by copy public ip of instance (52.66.25.109:80)
+  ![Screenshot 2024-07-21 104031](https://github.com/user-attachments/assets/7aaa42ed-f293-44c9-b23c-0f8362643634)
 
