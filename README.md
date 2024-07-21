@@ -45,6 +45,10 @@ sudo apt-get install jenkins) ( copy for offical web site )
 - for sonarqube(command=apt install docker.io -y | docker run --name myc1 -d -p 9000:9000 sonarqube:latest)
 - ##TOMCAT
 - first untar the tomcat file using command=(tar -xvdf file_name)
-- change directory to tomcat (cd tomcat) and in cd 
+- change directory to tomcat and go to conf directory command=(cd /tomcat/conf/)
+- vi tomcat-users.xml (here we need to add user to manage-gui and script)
+- ![Screenshot 2024-07-21 101642](https://github.com/user-attachments/assets/1303395a-c849-4c0f-9495-6448eedb3192)
+- 
+)
 - 
 
