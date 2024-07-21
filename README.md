@@ -55,7 +55,7 @@ sudo apt-get install jenkins) ( copy for offical web site )
  103159](https://github.com/user-attachments/assets/59499307-3b6a-4294-8281-ad8ebee94af0)
 - then restart the tomcat by (cd /tomcat/bin) and ./shutdown.sh) (./startup.sh) then you can view sever by copy public ip of instance (52.66.25.109:80)
   ![Screenshot 2024-07-21 104031](https://github.com/user-attachments/assets/7aaa42ed-f293-44c9-b23c-0f8362643634)
-- TO setup sonarqube
+- ## To setup sonarqube
 - public ip (52.66.25.109:9000) 9000 is the port number of sonarqube and default credentials for sonarqube is login and password is admin
 - ![Screenshot 2024-07-21 105118](https://github.com/user-attachments/assets/97fd4436-d6ec-41cc-bcaf-0ac9eeb5deaf)
 - make you own password
@@ -65,11 +65,22 @@ sudo apt-get install jenkins) ( copy for offical web site )
 - after creating project go to Locally for testing ![Screenshot 2024-07-21 110549](https://github.com/user-attachments/assets/7da8bfbf-f74f-4294-a5d1-25af16df0e1f)
 - Token generate and select maven for run analysis![Screenshot 2024-07-21 110913](https://github.com/user-attachments/assets/633da65a-5cdf-4808-adb1-b557a1117ead)
 - then copy the command for running code review
+- ##Jenkins 
 - to open jenkins server 52.66.25.109:8080 for password cat /var/lib/jenkins/secrets/initialAdminPassword will get the password and install suggested plugins
 - ![Screenshot 2024-07-21 102432](https://github.com/user-attachments/assets/a8a9ac55-8fa9-4e2b-b09b-1b4cef0d9bc6)
 - And create Admin by giving you own data then jenkins server is started
 - ![Screenshot 2024-07-21 104649](https://github.com/user-attachments/assets/5fa7a8ab-5585-4d6d-bfa9-77476193c637)
+- In manage jenkins![Screenshot 2024-07-21 112445](https://github.com/user-attachments/assets/11cd51b0-3f0f-48db-8906-d5bc70a2fddc)
+- Go to Plugins in available plugins download the deploy to container ![Screenshot 2024-07-21 114131](https://github.com/user-attachments/assets/be1a9f98-7783-4de0-90d3-8203f8a8d2fa)
+- GO to credentials and in global add credentials username and password and id:tomcat ![Screenshot 2024-07-21 114640](https://github.com/user-attachments/assets/0fdb2dca-1bdf-4a5e-b721-543458b572de) ![Screenshot 2024-07-21 115109](https://github.com/user-attachments/assets/53a1aaec-f758-4de6-a88d-67111f96c72e)
+- create new item to build ,test ,deploy application and
+- enter item name:pipeline and select the pipeline ![Screenshot 2024-07-21 111753](https://github.com/user-attachments/assets/c861f244-6798-4f36-b4b1-f4e19eb2a630)
+- then write the pipeline script here ![Screenshot 2024-07-21 112021](https://github.com/user-attachments/assets/b7a20855-ba40-46c6-8454-f58ce5f32419)
+- 
+- 
 
+
+- 
 
 
 
