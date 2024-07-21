@@ -11,7 +11,7 @@
 - Automata Build process 
 - Automate Testing
 - Automate Deploying
-- Build tools=Maven
+- Build tools=Maven 
 - Testing=SonarQube
 - CI/CD tool=Jenkins
 - Server=Tomcat
