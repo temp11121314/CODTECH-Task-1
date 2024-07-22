@@ -52,7 +52,7 @@ sudo apt-get install jenkins) ( copy for offical web site )
 - Change directory to tomcat and go to conf directory command=(cd /tomcat/conf/)
 - vi tomcat-users.xml (here we need to add user to manage-gui and script)
 - ![Screenshot 2024-07-21 101642](https://github.com/user-attachments/assets/1303395a-c849-4c0f-9495-6448eedb3192)
-- Change port number of tomcat by opening server.xml file(vi srever.xml) change prot no:80
+- Change port number of tomcat by opening server.xml file(vi servar.xml) change prot no:80
 - ![Screenshot 2024-07-21 102624](https://github.com/user-attachments/assets/a255271e-b573-4c98-9db0-07dca7df1792)
 - Make the value to comment in context.xml files in (cd webapps/manager/META-INF/) (cd /webapps/host-manager/META-INF)
 -![Screenshot 2024-07-21![Screenshot 2024-07-21 105242](https://github.com/user-attachments/assets/83fb6461-ad56-4732-ba91-3898db1e9ce3)
