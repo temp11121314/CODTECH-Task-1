@@ -11,12 +11,13 @@
 - Automata Build process 
 - Automate Testing
 - Automate Deploying
+- # *Tools*
 - Build tools=Maven 
 - Testing=SonarQube
 - CI/CD tool=Jenkins
 - Server=Tomcat
 - ### Process
-- #### step:1
+- #### step 1: setup AWS instance
 -Login to AWS console
 -Headover to EC2 dashboard
 -Launch instance
