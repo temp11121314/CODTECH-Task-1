@@ -37,14 +37,14 @@
 - ![Screenshot 2024-07-20 230536](https://github.com/user-attachments/assets/1acc7c37-4f3d-4867-af0f-c3ef1b77796b)
 - Make it a root user(command=sudo -i or sudo su) , update using (command=apt update -y)
 - ### Install java,maven,jenkins,sonarqube,tomcat
-- for *java*(command=apt install default-jdk -y)
-- for *maven*(command=apt install maven -y)
-- for *jenkins*(command=wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+- for java(command=apt install default-jdk -y)
+- for maven(command=apt install maven -y)
+- for jenkins(command=wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 sudo apt update |
 sudo apt-get install jenkins) ( copy for offical web site )
-- for *tomcat*(wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz) (copy from offical wed site)
-- for *sonarqube*(command: apt install docker.io -y| systemctl start docker |
+- for tomcat(wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz) (copy from offical wed site)
+- for sonarqube(command: apt install docker.io -y| systemctl start docker |
   systemctl enable docker| docker run --name myc1 -d -p 9000:9000 sonarqube:latest)
 - ##Tomcat
 - First untar the tomcat file using command:(tar -xvzf apache-tomcat-9.0.91.tar.gz) (mv apache-tomcat-9.0.91.tar.gz tomcat)
