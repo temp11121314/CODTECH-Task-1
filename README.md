@@ -17,25 +17,25 @@
 - CI/CD tool=Jenkins
 - Server=Tomcat
 - ### Process
-- #### step 1: setup AWS instance
+- #### step 1: Setup AWS instance
 -Login to AWS console
--Headover to EC2 dashboard
+-Head over to EC2 dashboard
 -Launch instance
 - Name=jenkins
-- OS of instance=Ubuntu 
+- OS=Ubuntu 
 ![Screenshot 2024-07-20 223248](https://github.com/user-attachments/assets/a1ca9f75-d4da-4393-8b32-f30467ea804a)
 - Type of Instance =t2.large
 - Create a key pair or select existing key pair                     
 ![Screenshot 2024-07-20 224026](https://github.com/user-attachments/assets/c4dbcb77-c992-4f41-9fba-be602eacf86b)
-- Network setting
+- Configure Network settings
 - Select the VPC,Subnet,Create security group
 - By allowing port no:8080(Default jenkins port number),default port number of tomcat is 8080, To avoid conflicts with Jenkins, we are changing the port number of tomcat to 80 and SonarQube port no:9000
 - ![Screenshot 2024-07-20 225211](https://github.com/user-attachments/assets/0a785598-17e2-4614-9b97-8a265c6c521d)
 - Launch the instance
-- #### step:2(after launching the instance)
-- Connect the instance to gitbash using shh client
+- #### Step 2: Configure the Instance
+- Connecting to the instance using SSH client
 - ![Screenshot 2024-07-20 230536](https://github.com/user-attachments/assets/1acc7c37-4f3d-4867-af0f-c3ef1b77796b)
-- Make it as root user(command=sudo -i or sudo su) , update using (command=apt update -y)
+- Make it as root user(command=sudo -i or sudo su) , update (command=apt update -y)
 - ### Install java,maven,jenkins,sonarqube,tomcat
 - for java(command=apt install default-jdk -y)
 - for maven(command=apt install maven -y)
