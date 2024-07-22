@@ -19,7 +19,7 @@
 - ### Process
 - #### step 1: Setup AWS instance
 -Login to AWS console
--Head over to EC2 dashboard
+- Head over to EC2 dashboard
 -Launch instance
 - Name=jenkins
 - OS=Ubuntu 
