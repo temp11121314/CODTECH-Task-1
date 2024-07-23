@@ -5,9 +5,9 @@
 - Domain:DevOps
 - Duration:July to September 2024
 - Mentor:SANTHOSH
-- # overview of the project
-- ## Project: Create a Jenkins continuous integration/continuous deployment(CI/CD) pipeline to build, test, and deploy a application
-- # *Objectives*
+# overview of the project
+## Project: Create a Jenkins continuous integration/continuous deployment(CI/CD) pipeline to build, test, and deploy a application
+# *Objectives*
 - Automate Build process 
 - Automate Testing
 - Automate Deployment
@@ -16,8 +16,8 @@
 - Testing: SonarQube
 - CI/CD tool: Jenkins
 - Server: Tomcat
-- ### Process
-- #### step 1: Setup AWS instance
+### Process
+#### step 1: Setup AWS instance
 - Login to AWS console
 - Head over to EC2 dashboard
 - Launch instance
