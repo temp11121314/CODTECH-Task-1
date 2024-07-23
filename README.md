@@ -63,7 +63,7 @@
    systemctl start docker 
    systemctl enable docker
    docker run --name myc1 -d -p 9000:9000 sonarqube:latest```
-- ##Tomcat
+- ### Tomcat
 - First untar the tomcat file using command:
 - ``` tar -xvzf apache-tomcat-9.0.91.tar.gz && mv apache-tomcat-9.0.91.tar.gz tomcat ```
 - Change directory to tomcat and go to conf directory command:(
@@ -147,6 +147,8 @@ pipeline {
         }
     }
 }
+ ```
+
 
 
 
