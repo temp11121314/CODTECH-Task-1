@@ -16,14 +16,19 @@ pipeline {
                 sh 'mvn compile'
             }
         }
-        stage('sonarqube test'){
+        stage('maven test'){
             steps{
-                sh "mvn clean verify sonar:sonar -Dsonar.projectKey=project -Dsonar.projectName='project' -Dsonar.host.url=http://52.66.25.109:9000 -Dsonar.token=sqp_86e67a486e77f9c01f52ae3f1042a9fdf94546af"
+                sh 'mvn test'
             }
         }
         stage('maven package'){
             steps{
                 sh 'mvn package'
+            }
+        }
+        stage('sonarqube test'){
+            steps{
+                sh "mvn clean verify sonar:sonar -Dsonar.projectKey=project -Dsonar.projectName='project' -Dsonar.host.url=http://52.66.25.109:9000 -Dsonar.token=sqp_86e67a486e77f9c01f52ae3f1042a9fdf94546af"
             }
         }
         stage('deploy to tomcat'){
