@@ -45,25 +45,29 @@
 - ```apt install maven -y```
 - #### for jenkins
 - command:
--     ``` sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
-       https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
-      echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
-      https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
-       /etc/apt/sources.list.d/jenkins.list > /dev/null
-        sudo apt-get update
-           sudo apt-get install jenkins```
+- ```
+  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+  sudo apt-get update
+  sudo apt-get install jenkins```
 - #### for tomcat
 - command:
 - ```wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz``` 
 - for sonarqube
 - command:
--      ``` apt install docker.io -y
-       systemctl start docker 
-      systemctl enable docker
-      docker run --name myc1 -d -p 9000:9000 sonarqube:latest```
+-  ```
+   apt install docker.io -y
+   systemctl start docker 
+   systemctl enable docker
+   docker run --name myc1 -d -p 9000:9000 sonarqube:latest```
 - ##Tomcat
-- First untar the tomcat file using command:(tar -xvzf apache-tomcat-9.0.91.tar.gz) (mv apache-tomcat-9.0.91.tar.gz tomcat)
-- Change directory to tomcat and go to conf directory command=(cd /tomcat/conf/)
+- First untar the tomcat file using command:
+- ``` tar -xvzf apache-tomcat-9.0.91.tar.gz && mv apache-tomcat-9.0.91.tar.gz tomcat ```
+- Change directory to tomcat and go to conf directory command:(
+- ``` cd /tomcat/conf/```
 - vi tomcat-users.xml (here we need to add user to manage-gui and script)
 - ![Screenshot 2024-07-21 101642](https://github.com/user-attachments/assets/1303395a-c849-4c0f-9495-6448eedb3192)
 - Change port number of Tomcat by opening server.xml file(vi server.xml) change port no:80
