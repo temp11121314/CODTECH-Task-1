@@ -83,12 +83,9 @@
 - Then create local project and name as you like
 ![Screenshot 2024-07-21 110246](https://github.com/user-attachments/assets/78531fc2-95ce-494b-8ab2-483622dfa78a)
 - Use global setting and create project
-  ![Screenshot 2024-07-21 110549](https://github.com/user-attachments/assets/e143b469-ecd3-4b73-9215-49cdd4394de1)
 - After creating project go to Locally for testing
-![Screenshot 2024-07-21 110913](https://github.com/user-attachments/assets/240fcad0-b5d9-487c-99d3-ad7419c1c198)
-
+![Screenshot 2024-07-21 110549](https://github.com/user-attachments/assets/e143b469-ecd3-4b73-9215-49cdd4394de1)
 - Generate token and maven for run analysis
-![Screenshot 2024-07-21 110913](https://github.com/user-attachments/assets/633da65a-5cdf-4808-adb1-b557a1117ead)
 - then copy the command for running code review
 ![Screenshot 2024-07-21 110913](https://github.com/user-attachments/assets/633da65a-5cdf-4808-adb1-b557a1117ead)
 ### Jenkins 
