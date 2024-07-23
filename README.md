@@ -20,12 +20,9 @@
 - #### step 1: Setup AWS instance
 -Login to AWS console
 - Head over to EC2 dashboard
-
-1. **Login to AWS Console**
-2. **Navigate to EC2 Dashboard**
-3. **Launch Instance**
-   - **Name:** jenkins
-   - **OS:** Ubuntu
+- Launch instance
+- Name=jenkins
+- OS=Ubuntu 
 ![Screenshot 2024-07-20 223248](https://github.com/user-attachments/assets/a1ca9f75-d4da-4393-8b32-f30467ea804a)
 - Type of Instance: t2.large
 - Create a key pair or select existing key pair                     
