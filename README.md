@@ -80,52 +80,11 @@ sudo apt-get install jenkins) ( copy for offical web site )
 - Enter item name:pipeline and select the pipeline ![Screenshot 2024-07-21 111753](https://github.com/user-attachments/assets/c861f244-6798-4f36-b4b1-f4e19eb2a630)
 - Then write the pipeline script here ![Screenshot 2024-07-21 112021](https://github.com/user-attachments/assets/b7a20855-ba40-46c6-8454-f58ce5f32419)
 - First stage is git clone use the pipeline syntax to generate script![Screenshot 2024-07-21 143855](https://github.com/user-attachments/assets/20c34bc1-bf25-469a-9801-adcb0e013b19)
-- Next stages maven validate and maven compile
-- In the test stage, provide the copy line of the SonarQube command
+- Next stages maven validate and maven compile and maven test
 - In the Maven package stage, it converts to a WAR file.
+- In sonarqube stage, provide the copy link of the SonarQube command and sonarqube perform static testing
 - Then this WAR file is deployed to Tomcat using pipeline script for 'Deploy to Container' ![Screenshot 2024-07-21 142505](https://github.com/user-attachments/assets/e0ae4d7b-d11c-4c5b-9bb2-be1349bb8034)
 - The overall script of pipeline ![Screenshot 2024-07-21 144417](https://github.com/user-attachments/assets/490d7139-3ab7-46cd-bc06-1eff8a8e395c)
- pipeline {
-    agent any 
-    stages{
-        stage('git clone'){
-            steps{
-                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Venn1991/train-ticket-reservation.git']])
-            }
-        }
-        stage('maven validate'){
-            steps{
-                sh 'mvn validate'
-            }    
-        }
-        stage('maven compile'){
-            steps{
-                sh 'mvn compile'
-            }
-        }
-        stage('maven test'){
-            steps{
-                sh 'mvn test'
-            }
-        }
-        stage('maven package'){
-            steps{
-                sh 'mvn package'
-            }
-        }
-        stage('sonarqube test'){
-            steps{
-                sh "mvn clean verify sonar:sonar -Dsonar.projectKey=project -Dsonar.projectName='project' -Dsonar.host.url=http://52.66.25.109:9000 -Dsonar.token=sqp_86e67a486e77f9c01f52ae3f1042a9fdf94546af"
-            }
-        }
-        stage('deploy to tomcat'){
-            steps{
-                deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://52.66.25.109')], contextPath: null, war: '**/*.war'
-            }
-        }
-    }
-}
-
 
 
 
