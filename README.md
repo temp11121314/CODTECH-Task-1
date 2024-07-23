@@ -73,9 +73,9 @@
 - Change port number of Tomcat by opening server.xml file(vi server.xml) change port no:80
  ![Screenshot 2024-07-21 102624](https://github.com/user-attachments/assets/a255271e-b573-4c98-9db0-07dca7df1792)
 - Comment the value in both context.xml files in (cd webapps/manager/META-INF/) (cd /webapps/host-manager/META-INF) To enable the Manager App ![Screenshot 2024-07-21 103159](https://github.com/user-attachments/assets/aca3a73e-fb71-4b67-b9b3-295c6aef3f01)
-- Then restart the tomcat by (cd /tomcat/bin) and ./shutdown.sh) (./startup.sh) then you can view sever by copy public ip of instance (52.66.25.109:80)
+- Then restart the tomcat by (cd /tomcat/bin) and ./shutdown.sh) (./startup.sh) then you can view server by copy public ip of instance (52.66.25.109:80)
   ![Screenshot 2024-07-21 104031](https://github.com/user-attachments/assets/7aaa42ed-f293-44c9-b23c-0f8362643634)
-- ## To set up SonarQube
+### To set up SonarQube
 - public ip (52.66.25.109:9000) 9000 is the port number of sonarqube and default credentials for sonarqube is login and password is admin
  ![Screenshot 2024-07-21 105118](https://github.com/user-attachments/assets/97fd4436-d6ec-41cc-bcaf-0ac9eeb5deaf)
 - Make your own password
@@ -85,7 +85,7 @@
 - After creating project go to Locally for testing ![Screenshot 2024-07-21 110549](https://github.com/user-attachments/assets/7da8bfbf-f74f-4294-a5d1-25af16df0e1f)
 - Generate token and maven for run analysis![Screenshot 2024-07-21 110913](https://github.com/user-attachments/assets/633da65a-5cdf-4808-adb1-b557a1117ead)
 - then copy the command for running code review
-- ## Jenkins 
+### Jenkins 
 - To open Jenkins server, go to 52.66.25.109:8080. To get password, Use cat /var/lib/jenkins/secrets/initialAdminPassword will get the password and install suggested plugin
  ![Screenshot 2024-07-21 102432](https://github.com/user-attachments/assets/a8a9ac55-8fa9-4e2b-b09b-1b4cef0d9bc6)
 - And create Admin by giving you own data then jenkins server is started
