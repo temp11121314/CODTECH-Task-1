@@ -61,7 +61,7 @@
    systemctl start docker 
    systemctl enable docker
    docker run --name myc1 -d -p 9000:9000 sonarqube:latest ```
-#### 4. Tomcat
+#### 4. Tomcat install and set up
 - To install Apache Tomcat:
  ```wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz```
 - First untar the tomcat file using command:
@@ -88,7 +88,7 @@
 - Generate token and maven for run analysis
 - then copy the command for running code review
 ![Screenshot 2024-07-21 110913](https://github.com/user-attachments/assets/633da65a-5cdf-4808-adb1-b557a1117ead)
-### Jenkins 
+### To set up Jenkins 
 - To open Jenkins server, go to `52.66.25.109:8080`. To get password, Use `cat /var/lib/jenkins/secrets/initialAdminPassword` will get the password and install suggested plugin
  ![Screenshot 2024-07-21 102432](https://github.com/user-attachments/assets/a8a9ac55-8fa9-4e2b-b09b-1b4cef0d9bc6)
 - And create Admin by giving you own data then jenkins server is started
