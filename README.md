@@ -39,7 +39,7 @@
 - ### Install java,maven,jenkins,sonarqube,tomcat
 - for java(command=apt install default-jdk -y)
 - for maven(command=apt install maven -y)
-- for jenkins![Screenshot 2024-07-23 211706](https://github.com/user-attachments/assets/c563a8f4-b1e6-4397-aa77-2324a0da5088)
+- for jenkins![Screenshot 2024-07-23 211706](https://github.com/user-attachments/assets/c563a8f4-b1e6-4397-aa77-2324a0da5088)( copy for offical web site )
 ( copy for offical web site )
 - for tomcat(wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz) (copy from offical wed site)
 - for sonarqube(command: apt install docker.io -y| systemctl start docker |
