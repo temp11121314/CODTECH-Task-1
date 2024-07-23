@@ -32,12 +32,12 @@
 - By allowing port no:8080(Default jenkins port number),default port number of tomcat is 8080, To avoid conflicts with Jenkins, we are changing the port number of tomcat to 80 and SonarQube port no:9000
 - ![Screenshot 2024-07-20 225211](https://github.com/user-attachments/assets/0a785598-17e2-4614-9b97-8a265c6c521d)
 - Launch the instance
-- #### Step 2: Configure the Instance
+#### Step 2: Configure the Instance
 - Connecting to the instance using SSH client
 - ![Screenshot 2024-07-20 230536](https://github.com/user-attachments/assets/1acc7c37-4f3d-4867-af0f-c3ef1b77796b)
 - Make it a root user(command=sudo -i or sudo su) , update using (command=apt update -y)
-- ### Install java,maven,jenkins,sonarqube,tomcat
-- #### for java
+### Step 3: Install java,maven,jenkins,sonarqube,tomcat
+#### for java
 - command:
 - ```command=apt install default-jdk -y```
 - #### for maven
