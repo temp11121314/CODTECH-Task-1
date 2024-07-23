@@ -81,7 +81,8 @@
 - Make your own password
  ![Screenshot 2024-07-21 105242](https://github.com/user-attachments/assets/298b56f9-ec14-423f-8b9c-09b544b1df4f)
 - Then create local project and name as you like
-![Screenshot 2024-07-21 105242](https://github.com/user-attachments/assets/63368f1b-b3e1-4e7d-8ea3-07b40c8d51f8)
+![Screenshot 2024-07-21 110246](https://github.com/user-attachments/assets/78531fc2-95ce-494b-8ab2-483622dfa78a)
+
 - Use global setting and create project
   ![Screenshot 2024-07-21 110246](https://github.com/user-attachments/assets/c06c0d13-ac9b-4bfb-87f8-60abc5372f31)
 - After creating project go to Locally for testing
