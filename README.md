@@ -11,7 +11,7 @@
 - Automate Build process 
 - Automate Testing
 - Automate Deployment
-- # *Tools*
+# *Tools*
 - Build tools: Maven 
 - Testing: SonarQube
 - CI/CD tool: Jenkins
