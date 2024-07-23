@@ -16,7 +16,7 @@
 - Testing: SonarQube
 - CI/CD tool: Jenkins
 - Server: Tomcat
-### Process
+## Process
 #### step 1: Setup AWS instance
 - Login to AWS console
 - Head over to EC2 dashboard
@@ -40,10 +40,10 @@
 #### for java
 - command:
 - ```command=apt install default-jdk -y```
-- #### for maven
+#### for maven
 - command:
 - ```apt install maven -y```
-- #### for jenkins
+#### for jenkins
 - command:
 - ```
   sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
@@ -53,17 +53,17 @@
   /etc/apt/sources.list.d/jenkins.list > /dev/null
   sudo apt-get update
   sudo apt-get install jenkins```
-- #### for tomcat
+#### for tomcat
 - command:
-- ```wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz``` 
-- for sonarqube
+- ```wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz```
+#### for sonarqube
 - command:
 -  ```
    apt install docker.io -y
    systemctl start docker 
    systemctl enable docker
    docker run --name myc1 -d -p 9000:9000 sonarqube:latest```
-- ### Tomcat
+### Tomcat
 - First untar the tomcat file using command:
 - ``` tar -xvzf apache-tomcat-9.0.91.tar.gz && mv apache-tomcat-9.0.91.tar.gz tomcat ```
 - Change directory to tomcat and go to conf directory command:(
