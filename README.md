@@ -73,7 +73,7 @@
 - Change port number of Tomcat by opening server.xml file `vi server.xml` change port no:80
  ![Screenshot 2024-07-21 102624](https://github.com/user-attachments/assets/a255271e-b573-4c98-9db0-07dca7df1792)
 - Comment the value in both context.xml files in `cd webapps/manager/META-INF/` `cd /webapps/host-manager/META-INF` To enable the Manager App ![Screenshot 2024-07-21 103159](https://github.com/user-attachments/assets/aca3a73e-fb71-4b67-b9b3-295c6aef3f01)
-- Then restart the tomcat by `cd /tomcat/bin` and `./shutdown.sh` `./startup.sh` then you can view server by copy public ip of instance `52.66.25.109:80`
+- To restart the tomcat go to `cd /tomcat/bin` and  `./shutdown.sh` `./startup.sh` then you can view server by copy public ip of instance `52.66.25.109:80`
   ![Screenshot 2024-07-21 104031](https://github.com/user-attachments/assets/7aaa42ed-f293-44c9-b23c-0f8362643634)
 ### To set up SonarQube
 - public ip `52.66.25.109:9000` 9000 is the port number of sonarqube and default credentials for sonarqube is login and password is `admin`
