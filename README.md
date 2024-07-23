@@ -80,11 +80,16 @@
  ![Screenshot 2024-07-21 105118](https://github.com/user-attachments/assets/97fd4436-d6ec-41cc-bcaf-0ac9eeb5deaf)
 - Make your own password
  ![Screenshot 2024-07-21 105242](https://github.com/user-attachments/assets/298b56f9-ec14-423f-8b9c-09b544b1df4f)
-- Then create local project and name as you like ![Screenshot 2024-07-21 105242](https://github.com/user-attachments/assets/63368f1b-b3e1-4e7d-8ea3-07b40c8d51f8)
-- Use global setting and create project ![Screenshot 2024-07-21 110246](https://github.com/user-attachments/assets/c06c0d13-ac9b-4bfb-87f8-60abc5372f31)
-- After creating project go to Locally for testing ![Screenshot 2024-07-21 110549](https://github.com/user-attachments/assets/7da8bfbf-f74f-4294-a5d1-25af16df0e1f)
-- Generate token and maven for run analysis![Screenshot 2024-07-21 110913](https://github.com/user-attachments/assets/633da65a-5cdf-4808-adb1-b557a1117ead)
+- Then create local project and name as you like
+![Screenshot 2024-07-21 105242](https://github.com/user-attachments/assets/63368f1b-b3e1-4e7d-8ea3-07b40c8d51f8)
+- Use global setting and create project
+  ![Screenshot 2024-07-21 110246](https://github.com/user-attachments/assets/c06c0d13-ac9b-4bfb-87f8-60abc5372f31)
+- After creating project go to Locally for testing
+![Screenshot 2024-07-21 110549](https://github.com/user-attachments/assets/7da8bfbf-f74f-4294-a5d1-25af16df0e1f)
+- Generate token and maven for run analysis
+![Screenshot 2024-07-21 110913](https://github.com/user-attachments/assets/633da65a-5cdf-4808-adb1-b557a1117ead)
 - then copy the command for running code review
+![Screenshot 2024-07-21 110913](https://github.com/user-attachments/assets/633da65a-5cdf-4808-adb1-b557a1117ead)
 ### Jenkins 
 - To open Jenkins server, go to `52.66.25.109:8080`. To get password, Use `cat /var/lib/jenkins/secrets/initialAdminPassword` will get the password and install suggested plugin
  ![Screenshot 2024-07-21 102432](https://github.com/user-attachments/assets/a8a9ac55-8fa9-4e2b-b09b-1b4cef0d9bc6)
