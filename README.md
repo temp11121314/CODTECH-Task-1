@@ -100,11 +100,12 @@
 - Create new item to build ,test ,deploy application and
 - Enter item name:pipeline and select the pipeline ![Screenshot 2024-07-21 111753](https://github.com/user-attachments/assets/c861f244-6798-4f36-b4b1-f4e19eb2a630)
 - Then write the pipeline script here ![Screenshot 2024-07-21 112021](https://github.com/user-attachments/assets/b7a20855-ba40-46c6-8454-f58ce5f32419)
-- First stage is git clone use the pipeline syntax to generate script![Screenshot 2024-07-21 143855](https://github.com/user-attachments/assets/20c34bc1-bf25-469a-9801-adcb0e013b19)
+- First stage is git clone use the pipeline syntax to generate script![Screenshot 2024-08-10 212523](https://github.com/user-attachments/assets/ec39ac14-59a3-4d0d-995e-193d275eb92b)
 - Next stages maven validate and maven compile and maven test
 - In the Maven package stage, it converts to a WAR file.
 - In sonarqube stage, provide the copy link of the SonarQube command and sonarqube perform static testing
-- Then this WAR file is deployed to Tomcat using pipeline script for 'Deploy to Container' ![Screenshot 2024-07-21 142505](https://github.com/user-attachments/assets/e0ae4d7b-d11c-4c5b-9bb2-be1349bb8034)
+- Then this WAR file is deployed to Tomcat using pipeline script for 'Deploy to Container' ![Screenshot 2024-08-10 212503](https://github.com/user-attachments/assets/4cfd0c45-a1a2-42da-a313-8ca81e117b32)
+
 - The overall script of pipeline
 - ### Jenkins Pipeline Script
 ```groovy
@@ -131,23 +132,29 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Maven Package') {
+        stage('SonarQube Test') {
+            steps {
+                sh "mvn clean verify sonar:sonar -Dsonar.projectKey=project -Dsonar.projectName='project' -Dsonar.host.url=http://52.73.212.149:9000 -Dsonar.token=sqp_2e29282770245a7a6e20e84289889712d51a2b56"
+            }
+        }
+        stage('maven package') {
             steps {
                 sh 'mvn package'
             }
         }
-        stage('SonarQube Test') {
-            steps {
-                sh "mvn clean verify sonar:sonar -Dsonar.projectKey=project -Dsonar.projectName='project' -Dsonar.host.url=http://52.66.25.109:9000 -Dsonar.token=sqp_86e67a486e77f9c01f52ae3f1042a9fdf94546af"
-            }
-        }
         stage('Deploy to Tomcat') {
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'Tomcat', path: '', url: 'http://52.66.25.109')], contextPath: null, war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://52.73.212.149')], contextPath: null, war: '**/*.war'
             }
         }
     }
 }
+```
+![Screenshot 2024-08-10 212606](https://github.com/user-attachments/assets/0e4946dd-1cbf-43c1-b883-adf4d7cc8b22)
+![Screenshot 2024-08-10 212440](https://github.com/user-attachments/assets/796b264f-70ef-4aa7-bb53-811ec302b5e9)
+
+
+
 
 
 
