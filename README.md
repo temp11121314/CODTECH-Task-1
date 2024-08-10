@@ -152,7 +152,8 @@ pipeline {
 ```
 ![Screenshot 2024-08-10 212606](https://github.com/user-attachments/assets/0e4946dd-1cbf-43c1-b883-adf4d7cc8b22)
 ![Screenshot 2024-08-10 212440](https://github.com/user-attachments/assets/796b264f-70ef-4aa7-bb53-811ec302b5e9)
-
+![Screenshot 2024-08-10 213443](https://github.com/user-attachments/assets/49feec43-126b-4b26-96b2-a498e916afdc)
+![Screenshot 2024-08-10 213252](https://github.com/user-attachments/assets/70c946e6-4619-47cd-8d06-acd78e8a44ac)
 
 
 
